@@ -28,6 +28,7 @@ namespace guessGame
 
         public static void chancesLeft(int chances)
         {
+            Console.Clear();
             Console.WriteLine("you have {0} chances left", chances);
         }
 
@@ -56,6 +57,11 @@ namespace guessGame
             Console.WriteLine("____Select Your Level____\n");
             Console.WriteLine("1: Easy\n2: Moderate \n3: Hard\n4: Extreme \n");
             Console.WriteLine($"Current Level: {Program.level}");
+        }
+
+        public static void duplicate()
+        {
+            Console.WriteLine("Cannot guess the same number consecutively");
         }
 
         public static void Goodbye()

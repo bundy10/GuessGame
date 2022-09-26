@@ -6,6 +6,7 @@ namespace guessGame
         static int number; // declaring field variables
         static int menu;
         static int guess;
+        static int duplicate;
         public static int level = 1;
 
         static void Main(string[] args) // main method
@@ -50,12 +51,20 @@ namespace guessGame
                         Console.WriteLine("Max: " + Event.max);
                         Console.WriteLine("Num: " + number);
 
-                        while (guess != number) // 
-                        {
+                        while (guess != number && Event.chances != 0) // 
+                        {                  
                             Dialog.EnterGuess();
                             guess = Convert.ToInt32(Console.ReadLine());
-
-                            Event.gameMode(guess, number);
+                            if (duplicate == guess)
+                            {
+                                duplicate = guess;
+                                Dialog.duplicate();
+                            }
+                            else
+                            {
+                                Event.gameMode(guess, number);
+                            }
+                            
                         }
                     }
                     else if (menu == 2)

@@ -75,6 +75,7 @@ namespace guessGame
             if (chances == 0)
             {
                 Dialog.Lost();
+                running = false;
             }
             else if (difference > 0)
             {
