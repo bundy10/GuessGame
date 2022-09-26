@@ -1,0 +1,15 @@
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/bin/Debug/net6.0/guessGame
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/bin/Debug/net6.0/guessGame.deps.json
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/bin/Debug/net6.0/guessGame.runtimeconfig.json
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/bin/Debug/net6.0/guessGame.dll
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/bin/Debug/net6.0/guessGame.pdb
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/obj/Debug/net6.0/guessGame.csproj.AssemblyReference.cache
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/obj/Debug/net6.0/guessGame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/obj/Debug/net6.0/guessGame.AssemblyInfoInputs.cache
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/obj/Debug/net6.0/guessGame.AssemblyInfo.cs
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/obj/Debug/net6.0/guessGame.csproj.CoreCompileInputs.cache
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/obj/Debug/net6.0/guessGame.dll
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/obj/Debug/net6.0/refint/guessGame.dll
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/obj/Debug/net6.0/guessGame.pdb
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/obj/Debug/net6.0/guessGame.genruntimeconfig.cache
+/Users/Bundy.Huang/Desktop/guessGame/guessGame/guessGame/obj/Debug/net6.0/ref/guessGame.dll
