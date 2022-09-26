@@ -26,10 +26,11 @@ namespace guessGame
             Console.WriteLine("the secret number is lower!");
         }
 
-        public static void chancesLeft(int chances)
+        public static void chancesLeft()
         {
             Console.Clear();
-            Console.WriteLine("you have {0} chances left", chances);
+            Console.WriteLine("you have {0} chances left", Event.chances);
+            Console.WriteLine("your guess was {0}", Program.guess);
         }
 
         public static void Lost()

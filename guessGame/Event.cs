@@ -70,7 +70,7 @@ namespace guessGame
         public static void gameIfs(int difference)
         {
             chances--;
-            Dialog.chancesLeft(chances);
+            Dialog.chancesLeft();
 
             if (chances == 0)
             {

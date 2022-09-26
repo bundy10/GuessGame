@@ -5,7 +5,7 @@ namespace guessGame
     {
         static int number; // declaring field variables
         static int menu;
-        static int guess;
+        public static int guess;
         static int duplicate;
         public static int level = 1;
 
@@ -25,7 +25,7 @@ namespace guessGame
                     menu = Convert.ToInt32(Console.ReadLine()); // take guess as start menu input
                     Console.Clear();
 
-                    if (menu == 1) // if start, Event will initialize field values according to easy to extreme properties
+                    if (menu == 1) // if start, Event will set field values according to easy to extreme properties
                     {
                         switch (level)
                         {
@@ -55,14 +55,14 @@ namespace guessGame
                         {                  
                             Dialog.EnterGuess();
                             guess = Convert.ToInt32(Console.ReadLine());
-                            if (duplicate == guess)
+                            if (duplicate != guess)
                             {
                                 duplicate = guess;
-                                Dialog.duplicate();
+                                Event.gameMode(guess, number);
                             }
                             else
                             {
-                                Event.gameMode(guess, number);
+                                Dialog.duplicate();
                             }
                             
                         }
