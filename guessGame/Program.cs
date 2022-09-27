@@ -59,22 +59,26 @@ namespace guessGame
                         {
                             Event.gameStart(number);
                         }
-
-
-                        else if (menu == 2)
+                        else
                         {
-                            Dialog.LevelSelect();
-                            level = Convert.ToInt32(Console.ReadLine());
-                        }
-                        else if (menu == 3)
-                        {
-                            Event.running = false;
+                            Dialog.invalid();
                         }
 
                     }
-                    Dialog.Goodbye();
+
                 }
+                else if (menu == 2)
+                {
+                    Dialog.LevelSelect();
+                    level = Convert.ToInt32(Console.ReadLine());
+                }
+                else if (menu == 3)
+                {
+                    Event.running = false;
+                }
+
             }
+            Dialog.Goodbye();
         }
     }
-}
+    }

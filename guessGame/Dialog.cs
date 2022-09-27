@@ -69,6 +69,11 @@ namespace guessGame
         {
             Console.WriteLine("thanks for playing");
         }
+
+        public static void invalid()
+        {
+            Console.WriteLine("please enter a number");
+        }
     }
 }
 

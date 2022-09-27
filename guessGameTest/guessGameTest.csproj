@@ -21,4 +21,7 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\guessGame\guessGame.csproj" />
+  </ItemGroup>
 </Project>
