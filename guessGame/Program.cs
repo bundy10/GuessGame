@@ -19,8 +19,6 @@ namespace guessGame
 
             while ( Event.running == true) // while loop to run game as long as running is equal to true
             {
-                try
-                {
                     Dialog.Menu();
                     menu = Convert.ToInt32(Console.ReadLine()); // take guess as start menu input
                     Console.Clear();
@@ -54,7 +52,10 @@ namespace guessGame
                         while (guess != number && Event.chances != 0) // 
                         {                  
                             Dialog.EnterGuess();
-                            guess = Convert.ToInt32(Console.ReadLine());
+                        // guess = Convert.ToInt32(Console.ReadLine());
+                        // guess = int.Parse(Console.ReadLine());
+                            var isValid = int.TryParse(Console.ReadLine(), out guess);
+                            Console.WriteLine("Please enter a number");
                             if (duplicate != guess)
                             {
                                 duplicate = guess;
@@ -77,16 +78,7 @@ namespace guessGame
                         Event.running = false;
                     }
 
-                }
-
-
-                catch (Exception)
-                {
-                    Console.Clear();
-                    Console.WriteLine("\nInvalid input");
-                }
             }
-
             Dialog.Goodbye();
         }
     }
