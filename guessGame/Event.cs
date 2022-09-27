@@ -10,6 +10,7 @@ namespace guessGame
         public static int min, max, chances;
         public static string? level;
         public static bool running = true;
+        public static int duplicate;
 
 
         public static void easy()
@@ -49,6 +50,20 @@ namespace guessGame
         // game difficulties involving min and max number and chances to guess
         // boolean to end or start game loop
         // game modes
+
+        
+        public static void gameStart(int number)
+        {
+            if (duplicate != Program.guess)
+            {
+                duplicate = Program.guess;
+                Event.gameMode(Program.guess, number);
+            }
+            else
+            {
+                Dialog.duplicate();
+            }
+        }
 
         public static void gameMode(int guess, int secret)
         {
